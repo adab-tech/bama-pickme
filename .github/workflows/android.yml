@@ -22,8 +22,9 @@ jobs:
           java-version: "17"
           cache: gradle
 
-      - name: Create secrets.properties for Maps
+      - name: Prepare local.properties and Maps secret
         run: |
+          echo "sdk.dir=${ANDROID_SDK_ROOT}" > local.properties
           KEY="${{ secrets.GOOGLE_MAPS_API_KEY }}"
           if [ -z "$KEY" ]; then
             KEY="ci-placeholder-replace-with-github-secret"
