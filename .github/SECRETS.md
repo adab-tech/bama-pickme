@@ -8,7 +8,9 @@ Repository: [adab-tech/bama-pickme](https://github.com/adab-tech/bama-pickme)
 |--------|----------|---------|
 | `GOOGLE_MAPS_API_KEY` | Recommended | Maps SDK (see `secrets.properties.example`) |
 
-Firebase uses `app/google-services.json` in the repo (project config, not an Actions secret).
+| `GOOGLE_SERVICES_JSON` | Recommended | Full contents of `app/google-services.json` (file is **not** in git) |
+
+Do **not** commit `app/google-services.json`. Copy from Firebase Console locally; sync to Actions with the command in `SECURITY.md`.
 
 **Release signing (optional, not in CI yet):**
 
