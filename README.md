@@ -39,3 +39,7 @@ cd bama-pickme
 ## Author
 
 **Adamu Abubakar** · [adamu.tech](https://adamu.tech) · [contact@adamu.tech](mailto:contact@adamu.tech)
+
+## License
+
+[MIT](LICENSE)
